@@ -81,5 +81,5 @@ yearout=zeros(ny,8);
 %%%%%%%can choose four results,fj(ny,3):phenology dates,
 %%%%%%%yxc(11,1):parameters of the soil carbon pools, you can input this variable to the next input to get the balance statement of the soil
 %%%%%%%dayout(ndays,8):daily dynamics, yearout(ny,8):yearly dynamics,
-[fj,yxc,dayout,yearout]=calllib('FORCCHN2','forcchn2',fj,yxc,dayout,yearout,ntrees,ny0,ny,ndays,lat,lon,ele,tmax,tmin,tmean,pho,prec,ra,rh,wind,sfc,pwp,vw,sc0,sn0,silt,sand,class1,evergr0,deci0,lai0,co2);
-unloadlibrary FORCCHN2;
+[fj,yxc,dayout,yearout]=calllib('FORCCHN2_64','forcchn2',fj,yxc,dayout,yearout,ntrees,ny0,ny,ndays,lat,lon,ele,tmax,tmin,tmean,pho,prec,ra,rh,wind,sfc,pwp,vw,sc0,sn0,silt,sand,class1,evergr0,deci0,lai0,co2);
+unloadlibrary FORCCHN2_64;
